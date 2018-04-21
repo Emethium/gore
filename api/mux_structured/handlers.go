@@ -25,7 +25,7 @@ func PokemonIndex(w http.ResponseWriter, r *http.Request) {
 
 func PokemonShow(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	var todoId int
+	var pokemonId int
 	var err error
 	if pokemonId, err = strconv.Atoi(vars["pokemonId"]); err != nil {
 		panic(err)
